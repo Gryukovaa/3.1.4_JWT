@@ -1,0 +1,14 @@
+/Users/annagryukova/IdeaProjects/PreProject/HBRNT/3.1.4new/src/main/java/ru/kata/spring/boot_security/demo/service/UserService.java
+/Users/annagryukova/IdeaProjects/PreProject/HBRNT/3.1.4new/src/main/java/ru/kata/spring/boot_security/demo/controller/UserController.java
+/Users/annagryukova/IdeaProjects/PreProject/HBRNT/3.1.4new/src/main/java/ru/kata/spring/boot_security/demo/SpringBootSecurityDemoApplication.java
+/Users/annagryukova/IdeaProjects/PreProject/HBRNT/3.1.4new/src/main/java/ru/kata/spring/boot_security/demo/controller/IndexController.java
+/Users/annagryukova/IdeaProjects/PreProject/HBRNT/3.1.4new/src/main/java/ru/kata/spring/boot_security/demo/configs/WebSecurityConfig.java
+/Users/annagryukova/IdeaProjects/PreProject/HBRNT/3.1.4new/src/main/java/ru/kata/spring/boot_security/demo/model/User.java
+/Users/annagryukova/IdeaProjects/PreProject/HBRNT/3.1.4new/src/main/java/ru/kata/spring/boot_security/demo/model/Role.java
+/Users/annagryukova/IdeaProjects/PreProject/HBRNT/3.1.4new/src/main/java/ru/kata/spring/boot_security/demo/repository/UserRepository.java
+/Users/annagryukova/IdeaProjects/PreProject/HBRNT/3.1.4new/src/main/java/ru/kata/spring/boot_security/demo/repository/RoleRepository.java
+/Users/annagryukova/IdeaProjects/PreProject/HBRNT/3.1.4new/src/main/java/ru/kata/spring/boot_security/demo/configs/SuccessUserHandler.java
+/Users/annagryukova/IdeaProjects/PreProject/HBRNT/3.1.4new/src/main/java/ru/kata/spring/boot_security/demo/service/RoleServiceImpl.java
+/Users/annagryukova/IdeaProjects/PreProject/HBRNT/3.1.4new/src/main/java/ru/kata/spring/boot_security/demo/controller/AdminController.java
+/Users/annagryukova/IdeaProjects/PreProject/HBRNT/3.1.4new/src/main/java/ru/kata/spring/boot_security/demo/service/RoleService.java
+/Users/annagryukova/IdeaProjects/PreProject/HBRNT/3.1.4new/src/main/java/ru/kata/spring/boot_security/demo/service/UserServiceImpl.java

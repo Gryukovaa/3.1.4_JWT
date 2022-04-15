@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+        <p id="admin_header" class="text-light font-weight-bold"></p>
+        <a class="ui-corner-left navbar-brand" href="/logout">Log Out</a>
+    </div>
+</nav>
+<div class="d-flex">
+    <div class="col-2">
+        <br>
+        <div class="row nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-admin" role="tab" aria-controls="v-pills-admin" aria-selected="true">Admin</a>
+            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-user" role="tab" aria-controls="v-pills-user" aria-selected="false">User</a>
+        </div>
+    </div>            <div class="col-10" style="background: #f3f3f3; height: 100vh">
+    <div class="tab-content" id="v-pills-tabContent">
+        <!--ADMIN PANEL-->
+        <div class="tab-pane fade show active" id="v-pills-admin" role="tabpanel" aria-labelledby="v-pills-admin-tab">
+            <br>
+            <h2>Admin panel</h2>
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist" style="background: #f3f3f3">
+                    <a class="nav-item nav-link active" id="nav-all_user-tab" data-toggle="tab" href="#nav-all_user" role="tab" aria-controls="nav-all_user" aria-selected="true">User table</a>
+                    <a class="nav-item nav-link" id="nav-create-tab" data-toggle="tab" href="#nav-create" role="tab" aria-controls="nav-create" aria-selected="false">New user</a>
+                </div>
+            </nav>
+
+            <div class="tab-content" id="nav-tabContent">
+                <!--ALL USERS-->
+                <div class="tab-pane fade show active" id="nav-all_user" role="tabpanel" aria-labelledby="nav-all_user-tab">
+                    <table class="center table" style="margin: auto">
+                        <tr>
+                            <td><h2>User information page</h2></td>
+                        </tr>
+
+                        <tr style="background: white">
+                            <td align="center">
+                                <table id="all_users_table" class="table table-hover borderless">
+                                    <thead>
+                                    <tr><h3>All users</h3></tr>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>First name</th>
+                                        <th>Last name</th>
+                                        <th>Email</th>
+                                        <th>Role</th>
+                                        <th>Edit</th>
+                                        <th>Delete</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody id="tBody"></tbody>
+                                    <div></div>
+                                    <div>
+                                    </div>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="tab-pane fade" id="nav-create" role="tabpanel" aria-labelledby="nav-create-tab">
+                    <table class="center table table-bordered" style="margin: auto">
+                        <tr>
+                            <td><h2>Add new user</h2></td>
+                        </tr>
+                        <tr style="background: white">
+                            <td align="center">
+                                <form id="formNewUser">
+                                    <div class="form-group col-4" align="center">
+                                        <div>
+
+                                            <label for="firstname" class="h6">Firstname</label>
+                                            <input type="text" name="firstname" class="form-control" id="firstname" placeholder="Enter first name" style="background: #ffe8ac">
+
+                                            <label for="lastname" class="h6">Lastname</label>
+                                            <input type="text" name="lastname" id="lastname" class="form-control" placeholder="Enter last name" style="background: #ffe8ac">
+
+                                            <label for="email" class="h6">Email</label>
+                                            <input type="text" name="email" id="email" class="form-control" placeholder="Enter email" style="background: #ffe8ac">
+
+                                            <label for="password" class="h6">Password</label>
+                                            <input type="text" name="password" id="password" class="form-control" placeholder="Password" style="background: #ffe8ac">
+
+                                            <div class="row">
+                                                <div class="col">
+                                                    <label class="control-label" for="roleSelect">Role</label>
+                                                    <select size="3" multiple class="form-control" id="roleSelect" name="roleSet">
+                                                        <option id="admin_select" value="ROLE_ADMIN">Admin</option>
+                                                        <option id="user_select" value="ROLE_USER">User</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br>
+
+                                    </div>
+                                </form>
+                                <button id="add_button" class="btn btn-primary" value="Add">Add</button>
+
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="v-pills-user" role="tabpanel" aria-labelledby="v-pills-user-tab">
+            <br>
+            <table class="center table" style="margin: auto">
+                <tr>
+                    <td><h2>User information page</h2></td>
+                </tr>
+                <tr style="background: white">
+                    <td>
+                        <table id="auth_user" class="table table-hover">
+                            <tr>
+                                <h3>About user</h3>
+                            </tr>
+                            <tr>
+                                <th>Id</th>
+                                <th>First name</th>
+                                <th>Last name</th>
+                                <th>Email</th>
+                                <th>Role</th>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="modalWindow"></div>
+
+<script src="/static/selectRole.js"></script>
+<script src="/static/roleList.js"></script>
+<script src="/static/users.js"></script>
+</body>
+</html>
